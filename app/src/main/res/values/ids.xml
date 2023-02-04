@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etnrocuenta" type="id" />
+    <item name="etidentcuenta" type="id" />
+    <item name="etdatecuenta" type="id" />
+    <item name="etsaldocuenta" type="id" />
+    <item name="btnregistrarcuenta" type="id" />
+    <item name="btnback" type="id" />
+</resources>

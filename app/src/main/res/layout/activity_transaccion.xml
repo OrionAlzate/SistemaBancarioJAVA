@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TransaccionActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TRANSACCIONES"
+        android:textColor="#9EFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Nro. Cuenta"
+        android:textColor="#9EFFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etcuentatra"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/inputs"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="Nro de Cuenta"
+        android:padding="10sp"
+        android:textColor="#9EFFFFFF"
+        android:textColorHint="#9EFFFFFF"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Fecha"
+        android:textColor="#9EFFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etdatetra"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:hint="Fecha de transacción"
+        android:padding="10sp"
+        android:textColor="#9EFFFFFF"
+        android:textColorHint="#9EFFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Hora"
+        android:textColor="#9EFFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ethoratra"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:hint="Hora de transacción"
+        android:inputType="text"
+        android:padding="10sp"
+        android:textColor="#9EFFFFFF"
+        android:textColorHint="#9EFFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Tipo Transacción"
+        android:textColor="#9EFFFFFF"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sptipoTra"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:dropDownSelector="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:popupBackground="#00FFFFFF" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Valor"
+        android:textColor="#9EFFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etvalortra"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/inputs"
+        android:gravity="center"
+        android:hint="Valor"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textColor="#9EFFFFFF"
+        android:textColorHint="#9EFFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnRetiro"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#631C2020"
+            android:onClick="Retirar"
+            android:shadowRadius="6"
+            android:text="Retirar"
+            android:textAllCaps="false"
+            app:cornerRadius="25dp"></Button>
+
+        <Button
+            android:id="@+id/btnConsig"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#631C2020"
+            android:onClick="Consignar"
+            android:shadowRadius="6"
+            android:text="Consignar"
+            android:textAllCaps="false"
+            app:cornerRadius="25dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnbacktra"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#D800D4BB"
+            android:onClick="ReturnCuenta"
+            android:shadowRadius="6"
+            android:text="Regresar"
+            android:textAllCaps="false"
+            app:cornerRadius="25dp"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
